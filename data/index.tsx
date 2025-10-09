@@ -1,22 +1,20 @@
-import { Mail, User, Zap, Code, Briefcase, FolderKanban } from "lucide-react";
+import { Mail, User,  Code, Briefcase, FolderKanban } from "lucide-react";
 import {
-  asanaIcon,
-  athonLogo,
+
   client_1,
   client_2,
   client_3,
   client_4,
-  discord,
-  dribble,
+  
   dribbleIcon,
-  facebook,
+
   figmaIcon,
-  framerIcon,
+ 
   reactIcon,
   nextIcon,
   nextJS,
   githubIcon,
-  javaScriptIcon,
+ 
   typeScriptIcon,
   expressIcon,
   nodeIcon,
@@ -27,42 +25,23 @@ import {
   graphicDesignIcon,
   instagramIcon,
   linkedInIcon,
-  notionIcon,
-  pinterest,
-  pixelworksLogo,
+ 
   project_1,
   project_2,
   project_3,
   project_4,
   seoOptIcon,
-  slackIcon,
-  snapchat,
-  spotify,
+ 
   vortexLogo,
   webDesignIcon,
   webDevIcon,
-  webflowIcon,
+ 
   XLogo,
 
 } from "@/app/assets/assets";
 import { Github, Instagram, Linkedin } from 'lucide-react'
 
-import { 
-  Code2, 
-  Palette, 
-  FileCode, 
-  Braces, 
-  Atom, 
-  Layers, 
-  Server, 
-  Workflow, 
-  Database, 
-  Wind, 
-  Box, 
 
-  Figma, 
-  Webhook 
-} from "lucide-react";
 
 import { counterListsType, FAQ, FollowerData, myExperienceTypes, myServicesPlansTypes, myServicesTypes, myShowCasesTypes,
    mySkillsTypes, socialBrandsTypes, testimonialsTypes } from "@/types";

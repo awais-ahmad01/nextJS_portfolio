@@ -13,13 +13,13 @@ import Brandcontainer from '../Brandcontainer/Brandcontainer'
 import Link from 'next/link'
 
 export default function Hero() {
-    const handleClick = () => {
-        const email = process.env.NEXT_PUBLIC_TO_EMAIL;
-        const subject = "Schedule a Call";
-        const body = "Hi, I'd like to schedule a call.";
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.open(mailtoLink, "_blank");
-    };
+    // const handleClick = () => {
+    //     const email = process.env.NEXT_PUBLIC_TO_EMAIL;
+    //     const subject = "Schedule a Call";
+    //     const body = "Hi, I'd like to schedule a call.";
+    //     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    //     window.open(mailtoLink, "_blank");
+    // };
 
     return (
         <div className="flex flex-none flex-col flex-nowrap gap-[30px] h-min justify-start overflow-visible p-0 relative w-full ">
