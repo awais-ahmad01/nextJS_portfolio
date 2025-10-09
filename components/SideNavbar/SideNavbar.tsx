@@ -1,6 +1,6 @@
 "use client";
 
-import { AvatarMe, Me } from '@/app/assets/assets';
+import {  Me } from '@/app/assets/assets';
 import { ArrowUp } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';

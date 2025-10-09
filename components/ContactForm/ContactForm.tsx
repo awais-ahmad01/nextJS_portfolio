@@ -1,7 +1,7 @@
 import type React from "react";
-import FollowerLists from "../FollowerLists/FollowerLists";
-import { followerData } from "@/data";
-import { rightArrow } from "@/app/assets/assets";
+// import FollowerLists from "../FollowerLists/FollowerLists";
+// import { followerData } from "@/data";
+// import { rightArrow } from "@/app/assets/assets";
 import Form from "./Form";
 export default function ContactForm() {
 

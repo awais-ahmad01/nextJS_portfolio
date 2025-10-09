@@ -1,5 +1,5 @@
 "use client"
-import { AvatarMe, Me, handGif } from '@/app/assets/assets'
+import { Me, handGif } from '@/app/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { Mail } from 'lucide-react'
@@ -8,8 +8,8 @@ import Button from '../ui/Button'
 import { motion } from "framer-motion"
 import AnimatedImageGrid from '../ui/AnimatedImageGrid'
 import Brandcontainer from '../Brandcontainer/Brandcontainer'
-import CounterContainer from '../CounterContainer/CounterContainer'
-import ScheduleButton from '../ui/ScheduleButton'
+// import CounterContainer from '../CounterContainer/CounterContainer'
+// import ScheduleButton from '../ui/ScheduleButton'
 import Link from 'next/link'
 
 export default function Hero() {
