@@ -1,0 +1,87 @@
+"use client";
+import React from "react";
+import SectionHeading from "@/components/SectionHeading";
+import { rightArrow, stackIcon } from "@/app/assets/assets";
+import { mySkills } from "@/data";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+export default function MySkills() {
+  return (
+    <div className="flex flex-col flex-1 gap-0 h-min overflow-hidden p-0 relative w-full items-center justify-start">
+      <div className="gap-[60px] flex-col max-w-full w-full lg:max-w-[750px] px-5 lg:px-0 lg:w-[80%] flex-nowrap flex items-center flex-none h-min justify-center  relative overflow-visible p-[40px_0px] md:p-[80px_0px]   ">
+        <div className="flex-none h-auto relative w-full">
+          <SectionHeading
+            icon={stackIcon}
+            title="My Skills"
+            description="Proficient in modern web technologies for building scalable and efficient applications."
+          />
+        </div>
+        <div className="w-full ">
+          <motion.ul
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="grid gap-[10px] flex-none auto-rows-min h-min justify-center overflow-visible relative p-0 w-full lg:grid-cols-[repeat(2,minmax(50px,1fr))] grid-cols-1 lg:grid-rows-[repeat(2,min-content)] "
+          >
+            {mySkills?.map((skill, index) => (
+              <motion.li
+                key={skill.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{
+                  once: true,
+                }}
+                className="w-full"
+              >
+                <Link
+                  href={skill.link}
+                  className="w-full bg-very-dark-gray border border-dark-gray-3 rounded-xl flex cursor-pointer items-center flex-nowrap gap-[10px] h-min justify-start overflow-visible relative p-[14px_24px_14px_14px] group hover:bg-almost-black transition-all duration-500"
+                >
+                  {/* logo  */}
+                  <div className="bg-dark-gray-4 border border-border-color rounded-[7px] flex items-center flex-none flex-nowrap gap-[10px] h-min justify-center overflow-hidden p-2 relative w-min  ">
+                    <div className="aspect-square flex-none h-auto overflow-hidden relative w-[30px]  ">
+                      <figure className="relative inset-0 rounded-[inherit]  ">
+                        <Image
+                          src={skill.logo}
+                          alt={skill.title}
+                          className="block w-full h-full rounded-[inherit] object-cover object-center "
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                  {/* text  */}
+                  <div className="flex items-start flex-1 flex-col flex-nowrap gap-0 h-min justify-start overflow-visible p-0 relative">
+                    <div className="flex flex-col flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
+                      <p className="text-light-gray-4 font-semibold text-[18px]  ">
+                        {skill.title}
+                      </p>
+                    </div>
+                    <div className="flex flex-col flex-shrink-0 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
+                      <p className="text-light-gray-2 font-medium text-[15px]  ">
+                        {skill.description}
+                      </p>
+                    </div>
+                  </div>
+                  {/* arrow  */}
+                  <div className="aspect-square flex-none h-auto w-[24px] overflow-hidden relative opacity-50 group-hover:opacity-100 ">
+                    <div className="absolute rounded-full inset-0 flex items-center justify-center w-full h-full">
+                      <Image
+                        src={rightArrow}
+                        alt="arrow"
+                        width={24}
+                        height={24}
+                        className="block w-full h-full rounded-full object-cover object-center transition-all duration-500 group-hover:-rotate-45"
+                      />
+                    </div>
+                  </div>
+                </Link>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </div>
+      </div>
+    </div>
+  );
+}
