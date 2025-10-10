@@ -53,7 +53,7 @@ export default function Projects() {
                         </h3>
                       </div>
 
-                      <div className="flex-none h-auto relative w-full sm:w-auto">
+                      {/* <div className="flex-none h-auto relative w-full sm:w-auto">
                         <Link
                           href={"https://" + item.link}
                           target="_blank"
@@ -77,7 +77,7 @@ export default function Projects() {
                             </p>
                           </div>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 

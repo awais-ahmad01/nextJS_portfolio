@@ -2,7 +2,7 @@ import Hero from '@/components/Hero/Hero'
 import MyExperience from '@/components/MyExperience/MyExperience'
 
 import MySkills from '@/components/MySkills/MySkills'
-import ShowCase from '@/components/projects'
+import Projects from '@/components/projects'
 import Contact from '@/components/Contact/Contact'
 
 import React from 'react'
@@ -16,7 +16,7 @@ export default function Home() {
         <MyExperience />
         <MySkills />
        
-        <ShowCase showData={2} isMore />
+        <Projects showData={2} isMore />
 
         <Contact />
       
