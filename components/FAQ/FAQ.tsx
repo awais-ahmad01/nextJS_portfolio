@@ -56,7 +56,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                                         <Image
                                             src={multiplyIcon || "/placeholder.svg"}
                                             alt="toggle icon"
-                                            className="transition-opacity rotate-45 duration-500"
+                                            className="section-icon transition-opacity rotate-45 duration-500"
                                             style={{
                                                 opacity: openIndices.includes(index) ? 1 : 0.6,
                                             }}

@@ -144,3 +144,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--dark-gray-7);
 }
+
+
+
+/* default (dark) - no invert */
+.section-icon {
+  filter: invert(0) saturate(100%);
+  transition: filter 160ms ease;
+}
+
+/* when html has data-theme="light" invert the icon (white -> black) */
+[data-theme="light"] .section-icon {
+  filter: invert(1) saturate(100%);
+}
