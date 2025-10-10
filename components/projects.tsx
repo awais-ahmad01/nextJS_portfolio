@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { flyIcon, linkIcon, rightArrow } from "@/app/assets/assets";
+import { flyIcon,  rightArrow } from "@/app/assets/assets";
 import Image from "next/image";
 import { myShowCases } from "@/data";
 import Link from "next/link";

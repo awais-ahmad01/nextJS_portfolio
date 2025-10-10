@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import SectionHeading from "@/components/SectionHeading";
-import { flyIcon, linkIcon } from "@/app/assets/assets";
+import { flyIcon } from "@/app/assets/assets";
 import Image from "next/image";
 import { myShowCases } from "@/data";
-import Link from "next/link";
+// import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Projects() {
