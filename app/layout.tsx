@@ -21,8 +21,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "PS Parwez • Portfolio",
-  description: "PS Parwez's personal portfolio showcasing projects, skills, and experience.",
+  title: "AA • Portfolio",
+  description: "Awais Ahmad's personal portfolio showcasing projects, skills, and experience.",
 };
 
 export default function RootLayout({
